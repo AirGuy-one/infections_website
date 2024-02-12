@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симптомы - Проект Инфекция</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            overflow: hidden; /* Clear floats */
+        }
+        .image-section {
+            float: right; /* Float image to the right in odd-numbered sections */
+            width: 50%;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .text-section {
+            float: left; /* Float text to the left in odd-numbered sections */
+            width: 50%;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        .image-section img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .text-section h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .text-section p {
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+        /* Reversed styling for even-numbered sections */
+        .section.even .image-section {
+            float: left;
+            padding-left: 0;
+            padding-right: 20px;
+        }
+        .section.even .text-section {
+            float: right;
+            padding-right: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Симптомы - Проект Инфекция</h1>
+    </header>
+    <div class="links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="symptoms.html">Симптомы</a>
+        <a href="prevention.html">Профилактика</a>
+        <a href="treatment.html">Лечение</a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="text-section">
+                <h2>Лихорадка</h2>
+                <p>Высокая температура тела, часто сопровождаемая ознобом или потоотделением, является распространенным симптомом многих инфекционных заболеваний.</p>
+            </div>
+            <div class="image-section">
+                <img src="fever.jpg" alt="Лихорадка">
+            </div>
+        </div>
+        <div class="section even"> <!-- Even-numbered section -->
+            <div class="image-section">
+                <img src="cough.jpg" alt="Кашель">
+            </div>
+            <div class="text-section">
+                <h2>Кашель</h2>
+                <p>Постоянный кашель, иногда сопровождаемый мокротой или болями в груди, может быть признаком респираторных инфекций, таких как грипп или пневмония.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="text-section">
+                <h2>Усталость</h2>
+                <p>Крайнее усталость или истощение, которые не улучшаются отдыхом, могут быть признаками различных инфекций, влияющих на уровень энергии организма.</p>
+            </div>
+            <div class="image-section">
+                <img src="fatigue.jpg" alt="Усталость">
+            </div>
+        </div>
+        <div class="section even"> <!-- Even-numbered section -->
+            <div class="image-section">
+                <img src="rash.jpeg" alt="Сыпь">
+            </div>
+            <div class="text-section">
+                <h2>Сыпь</h2>
+                <p>Сыпь на коже, характеризующаяся покраснением, зудом или воспалением, может возникать в ответ на определенные вирусные или бактериальные инфекции.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h3>Свяжитесь с нами</h3>
+                <p>Email: info@infectionproject.com</p>
+                <p>Телефон: +7 (123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Подписывайтесь на нас</h3>
+                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Facebook</a>
+                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Twitter</a>
+                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Instagram</a>
+            </div>
+        </div>
+        <hr style="margin: 20px 0;">
+        <p style="margin: 0;">&copy; 2024 Проект Инфекция. Все права защищены.</p>
+    </footer>
+</body>
+</html>

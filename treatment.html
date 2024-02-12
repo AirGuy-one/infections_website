@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лечение - Проект Инфекция</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .treatment-option {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .treatment-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .treatment-title {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .treatment-description {
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+        .treatment-image {
+            max-width: 200px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Лечение - Проект Инфекция</h1>
+    </header>
+    <div class="links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="symptoms.html">Симптомы</a>
+        <a href="prevention.html">Профилактика</a>
+        <a href="treatment.html">Лечение</a>
+    </div>
+    <div class="container">
+        <div class="treatment-option">
+            <div class="treatment-info">
+                <h2 class="treatment-title">Антибиотики</h2>
+                <p class="treatment-description">Антибиотики - это лекарства, которые используются для лечения бактериальных инфекций. Они действуют, убивая или подавляя рост бактерий в организме. Важно использовать антибиотики только по назначению врача, чтобы избежать резистентности к антибиотикам.</p>
+            </div>
+        </div>
+        <div class="treatment-option">
+            <div class="treatment-info">
+                <h2 class="treatment-title">Противовирусные препараты</h2>
+                <p class="treatment-description">Противовирусные препараты - это лекарства, которые используются для лечения вирусных инфекций. Они действуют, подавляя репликацию вирусов в организме. Противовирусные препараты могут помочь снизить тяжесть и длительность симптомов при вирусных инфекциях, таких как грипп, ВИЧ и герпес.</p>
+            </div>
+        </div>
+        <div class="treatment-option">
+            <div class="treatment-info">
+                <h2 class="treatment-title">Поддерживающая терапия</h2>
+                <p class="treatment-description">Поддерживающая терапия включает в себя управление симптомами и обеспечение комфорта пациентам с инфекционными заболеваниями. Это может включать в себя отдых, гидратацию, облегчение боли и принятие средств для снижения температуры. Поддерживающая терапия необходима для содействия выздоровлению и улучшения результатов для пациентов.</p>
+            </div>
+        </div>
+        <div class="treatment-option">
+            <div class="treatment-info">
+                <h2 class="treatment-title">Иммунотерапия</h2>
+                <p class="treatment-description">Иммунотерапия - это подход к лечению, который использует иммунную систему организма для борьбы с инфекционными агентами. Это может включать в себя использование вакцин, моноклональных антител или других иммуномодулирующих средств для усиления иммунных ответов и повышения очищения от патогенов.</p>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="container">
+        <div class="form-wrapper">
+            <h2 class="form-title">Хотите получить лечение от нас?</h2>
+            <form id="treatmentForm">
+                <div class="form-group">
+                    <input type="radio" id="yes" name="treatment" value="yes">
+                    <label for="yes">Да</label>
+                    <input type="radio" id="no" name="treatment" value="no">
+                    <label for="no">Нет</label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h3>Свяжитесь с нами</h3>
+                <p>Email: info@infectionproject.com</p>
+                <p>Телефон: +7 (123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Подписывайтесь на нас</h3>
+                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Facebook</a>
+                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Twitter</a>
+                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Instagram</a>
+            </div>
+        </div>
+        <hr style="margin: 20px 0;">
+        <p style="margin: 0;">&copy; 2024 Проект Инфекция. Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.getElementById("treatmentForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const treatmentOption = document.querySelector('input[name="treatment"]:checked').value;
+
+            if (treatmentOption === "yes") {
+                alert("Хорошо, мы вас вылечим)).");
+            } else {
+                alert("Спасибо за посещение нашего сайта!");
+            }
+        });
+    </script>
+</body>
+</html>
