@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.treatment-option {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.treatment-info {
+    flex: 1;
+    margin-left: 20px;
+}
+.treatment-title {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.treatment-description {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+.treatment-image {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.form-title {
+    font-size: 1.5em;
+    margin-top: 0;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+.form-group input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #555;
+}
+
