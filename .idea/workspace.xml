@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d8cfff3-f54b-41ca-9922-b133ca222019" name="Changes" comment="set it up">
+    <list default="true" id="9d8cfff3-f54b-41ca-9922-b133ca222019" name="Changes" comment="add content to main page">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first-image.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second-image.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/treatment.html" beforeDir="false" afterPath="$PROJECT_DIR$/treatment.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/airguy/PycharmProjects/infections_website&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/airguy/PycharmProjects/codewars_task&quot;
   }
 }</component>
   <component name="SharedIndexes">
@@ -65,11 +68,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707780863305</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add content to main page">
+      <option name="closed" value="true" />
+      <created>1707915493455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707915493455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="set it up" />
-    <option name="LAST_COMMIT_MESSAGE" value="set it up" />
+    <MESSAGE value="add content to main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add content to main page" />
   </component>
 </project>

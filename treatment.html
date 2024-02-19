@@ -86,81 +86,112 @@
 
 <div class="container">
     <div class="form-wrapper">
-        <h2 class="form-title">Как вы относитесь к использованию антибиотиков для лечения бактериальных инфекций?</h2>
-        <form id="question1Form">
+        <h2 class="form-title">Опрос перед оставлением заявки</h2>
+        <form id="questionForm">
             <div class="form-group">
+                <h3>1. Что вас беспокоит?</h3>
                 <input type="radio" id="q1a" name="question1" value="a">
-                <label for="q1a">А: Я считаю, что антибиотики необходимы при бактериальных инфекциях.</label><br>
+                <label for="q1a">А: Горло</label><br>
                 <input type="radio" id="q1b" name="question1" value="b">
-                <label for="q1b">Б: Я предпочитаю избегать использования антибиотиков из-за потенциальных побочных
-                    эффектов.</label><br>
+                <label for="q1b">Б: Нос и гортань</label><br>
                 <input type="radio" id="q1c" name="question1" value="c">
-                <label for="q1c">В: Я не уверен(а), какой подход правильнее.</label><br>
+                <label for="q1c">В: Кашель</label><br>
+                <input type="radio" id="q1d" name="question1" value="d">
+                <label for="q1d">Г: Высокая температура</label><br>
+                <input type="radio" id="q1e" name="question1" value="e">
+                <label for="q1e">Д: Боль в груди</label><br>
+                <input type="radio" id="q1f" name="question1" value="f">
+                <label for="q1f">Е: Боль в животе</label><br>
+                <input type="radio" id="q1g" name="question1" value="g">
+                <label for="q1g">Ж: Другое</label><br>
             </div>
             <div class="form-group">
-                <input type="submit" value="Отправить">
-            </div>
-        </form>
-    </div>
-</div>
-
-<!-- Question 2 -->
-<div class="container">
-    <div class="form-wrapper">
-        <h2 class="form-title">Как вы считаете, эффективны ли противовирусные препараты для лечения вирусных
-            инфекций?</h2>
-        <form id="question2Form">
-            <div class="form-group">
+                <h3>2. Как долго вы наблюдаете эти симптомы?</h3>
                 <input type="radio" id="q2a" name="question2" value="a">
-                <label for="q2a">А: Да, я считаю, что противовирусные препараты могут помочь при вирусных
-                    инфекциях.</label><br>
+                <label for="q2a">Менее 3 дней</label><br>
                 <input type="radio" id="q2b" name="question2" value="b">
-                <label for="q2b">Б: Нет, я считаю, что противовирусные препараты обычно неэффективны.</label><br>
+                <label for="q2b">3-7 дней</label><br>
                 <input type="radio" id="q2c" name="question2" value="c">
-                <label for="q2c">В: Я не знаю, достаточно ли эффективны противовирусные препараты.</label><br>
+                <label for="q2c">Более недели</label><br>
+                <input type="radio" id="q2d" name="question2" value="d">
+                <label for="q2d">Не помню</label><br>
             </div>
             <div class="form-group">
-                <input type="submit" value="Отправить">
-            </div>
-        </form>
-    </div>
-</div>
-
-<!-- Question 3 -->
-<div class="container">
-    <div class="form-wrapper">
-        <h2 class="form-title">Как вы оцениваете важность поддерживающей терапии при инфекционных заболеваниях?</h2>
-        <form id="question3Form">
-            <div class="form-group">
-                <input type="radio" id="q3a" name="question3" value="a">
-                <label for="q3a">А: Поддерживающая терапия играет важную роль в облегчении симптомов и ускорении
-                    выздоровления.</label><br>
-                <input type="radio" id="q3b" name="question3" value="b">
-                <label for="q3b">Б: Я считаю, что поддерживающая терапия не имеет большого значения и может быть
-                    пренебрежена.</label><br>
-                <input type="radio" id="q3c" name="question3" value="c">
-                <label for="q3c">В: Мне трудно сказать, как важна поддерживающая терапия.</label><br>
+                <h3>3. Есть ли у вас дополнительные симптомы?</h3>
+                <input type="checkbox" id="q3a" name="question3a" value="a">
+                <label for="q3a">Затрудненное дыхание</label><br>
+                <input type="checkbox" id="q3b" name="question3b" value="b">
+                <label for="q3b">Слабость и усталость</label><br>
+                <input type="checkbox" id="q3c" name="question3c" value="c">
+                <label for="q3c">Боли в мышцах и суставах</label><br>
+                <input type="checkbox" id="q3d" name="question3d" value="d">
+                <label for="q3d">Рвота или тошнота</label><br>
+                <input type="checkbox" id="q3e" name="question3e" value="e">
+                <label for="q3e">Потеря обоняния и/или вкуса</label><br>
+                <input type="checkbox" id="q3f" name="question3f" value="f">
+                <label for="q3f">Другое</label><br>
             </div>
             <div class="form-group">
-                <input type="submit" value="Отправить">
-            </div>
-        </form>
-    </div>
-</div>
-
-<!-- Question 4 -->
-<div class="container">
-    <div class="form-wrapper">
-        <h2 class="form-title">Как вы относитесь к использованию иммунотерапии для борьбы с инфекционными агентами?</h2>
-        <form id="question4Form">
-            <div class="form-group">
+                <h3>4. Были ли вы в контакте с кем-то, кто имел подобные симптомы или подтвердился диагноз инфекции?</h3>
                 <input type="radio" id="q4a" name="question4" value="a">
-                <label for="q4a">А: Иммунотерапия - это перспективный метод лечения инфекций.</label><br>
+                <label for="q4a">Да</label><br>
                 <input type="radio" id="q4b" name="question4" value="b">
-                <label for="q4b">Б: Я сомневаюсь в эффективности иммунотерапии и предпочитаю другие методы
-                    лечения.</label><br>
+                <label for="q4b">Нет</label><br>
                 <input type="radio" id="q4c" name="question4" value="c">
-                <label for="q4c">В: Мне не знакома эффективность иммунотерапии и ее возможные преимущества.</label><br>
+                <label for="q4c">Не уверен(а)</label><br>
+            </div>
+            <div class="form-group">
+                <h3>5. Каковы ваши основные обстоятельства жизни?</h3>
+                <input type="checkbox" id="q5a" name="question5a" value="a">
+                <label for="q5a">Работа в офисе</label><br>
+                <input type="checkbox" id="q5b" name="question5b" value="b">
+                <label for="q5b">Работа в медицинской сфере</label><br>
+                <input type="checkbox" id="q5c" name="question5c" value="c">
+                <label for="q5c">Работа с публикой (торговля, обслуживание)</label><br>
+                <input type="checkbox" id="q5d" name="question5d" value="d">
+                <label for="q5d">Работа с детьми</label><br>
+                <input type="checkbox" id="q5e" name="question5e" value="e">
+                <label for="q5e">Другое</label><br>
+            </div>
+            <div class="form-group">
+                <h3>6. Есть ли у вас хронические заболевания или состояния?</h3>
+                <input type="radio" id="q6a" name="question6" value="a">
+                <label for="q6a">Да</label><br>
+                <input type="radio" id="q6b" name="question6" value="b">
+                <label for="q6b">Нет</label><br>
+                <input type="radio" id="q6c" name="question6" value="c">
+                <label for="q6c">Не уверен(а)</label><br>
+            </div>
+            <div class="form-group">
+                <h3>7. Принимаете ли вы какие-либо лекарства или добавки в данный момент?</h3>
+                <input type="radio" id="q7a" name="question7" value="a">
+                <label for="q7a">Да</label><br>
+                <input type="radio" id="q7b" name="question7" value="b">
+                <label for="q7b">Нет</label><br>
+                <input type="radio" id="q7c" name="question7" value="c">
+                <label for="q7c">Не уверен(а)</label><br>
+            </div>
+            <div class="form-group">
+                <h3>8. Есть ли у вас аллергии на лекарства или продукты питания?</h3>
+                <input type="radio" id="q8a" name="question8" value="a">
+                <label for="q8a">Да</label><br>
+                <input type="radio" id="q8b" name="question8" value="b">
+                <label for="q8b">Нет</label><br>
+                <input type="radio" id="q8c" name="question8" value="c">
+                <label for="q8c">Не уверен(а)</label><br>
+            </div>
+            <div class="form-group">
+                <h3>9. Контактная информация:</h3>
+                <label for="name">Имя и фамилия:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="phone">Контактный номер телефона:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="email">Электронная почта:</label><br>
+                <input type="email" id="email" name="email"><br>
+            </div>
+            <div class="form-group">
+                <h3>10. Дополнительные комментарии или вопросы:</h3>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
             </div>
             <div class="form-group">
                 <input type="submit" value="Отправить">
@@ -168,6 +199,8 @@
         </form>
     </div>
 </div>
+
+
 
 
 <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
@@ -195,99 +228,15 @@
         const treatmentOption = document.querySelector('input[name="treatment"]:checked').value;
 
         if (treatmentOption === "yes") {
-            alert("Хорошо, мы вас вылечим)).    ");
+            alert("Оставляйте заявку ниже или звоните по телефону указанному в секции контакты    ");
         } else {
             alert("Спасибо за посещение нашего сайта!");
         }
     });
 
-    // Question 1
-    document.getElementById("question1Form").addEventListener("submit", function(event) {
-        event.preventDefault();
 
-        const answer = document.querySelector('input[name="question1"]:checked').value;
 
-        // Handle the answer
-        switch(answer) {
-            case "a":
-                alert("А: Антибиотики являются важным средством лечения бактериальных инфекций, но их использование должно быть ограниченным и назначаться только врачом, чтобы избежать резистентности к ним.");
-                break;
-            case "b":
-                alert("Б: Побочные эффекты антибиотиков могут быть серьезными, поэтому важно использовать их только при необходимости под наблюдением врача.");
-                break;
-            case "c":
-                alert("В: Важно балансировать необходимость использования антибиотиков с возможными рисками и побочными эффектами.");
-                break;
-            default:
-                alert("Выберите ответ на вопрос.");
-        }
-    });
 
-    // Question 2
-    document.getElementById("question2Form").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const answer = document.querySelector('input[name="question2"]:checked').value;
-
-        // Handle the answer
-        switch(answer) {
-            case "a":
-                alert("А: Противовирусные препараты могут быть эффективны при некоторых вирусных инфекциях, но их эффективность может быть ограничена.");
-                break;
-            case "b":
-                alert("Б: Подход к лечению вирусных инфекций должен включать не только противовирусные препараты, но и другие методы, такие как поддерживающая терапия.");
-                break;
-            case "c":
-                alert("В: Эффективность противовирусных препаратов может зависеть от конкретного вируса и степени заражения.");
-                break;
-            default:
-                alert("Выберите ответ на вопрос.");
-        }
-    });
-
-    // Question 3
-    document.getElementById("question3Form").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const answer = document.querySelector('input[name="question3"]:checked').value;
-
-        // Handle the answer
-        switch(answer) {
-            case "a":
-                alert("А: Поддерживающая терапия играет важную роль в облегчении симптомов и улучшении результатов лечения инфекционных заболеваний.");
-                break;
-            case "b":
-                alert("Б: Недооценка важности поддерживающей терапии может привести к длительному выздоровлению и осложнениям.");
-                break;
-            case "c":
-                alert("В: Эффективность поддерживающей терапии может зависеть от типа инфекции и индивидуальных особенностей пациента.");
-                break;
-            default:
-                alert("Выберите ответ на вопрос.");
-        }
-    });
-
-    // Question 4
-    document.getElementById("question4Form").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const answer = document.querySelector('input[name="question4"]:checked').value;
-
-        // Handle the answer
-        switch(answer) {
-            case "a":
-                alert("А: Иммунотерапия представляет собой инновационный метод лечения, который использует собственную иммунную систему организма для борьбы с инфекционными агентами.");
-                break;
-            case "b":
-                alert("Б: Иммунотерапия может быть перспективной альтернативой традиционным методам лечения инфекций, но требует дальнейших исследований и клинических испытаний.");
-                break;
-            case "c":
-                alert("В: Знание об иммунотерапии и ее потенциальных преимуществах может помочь принять более информированное решение о лечении инфекционных заболеваний.");
-                break;
-            default:
-                alert("Выберите ответ на вопрос.");
-        }
-    });
 </script>
 
 </body>
