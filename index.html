@@ -81,70 +81,73 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на веб-сайт клиники БиоСпектр</h1>
-        <p>Лучшая частная инфекционная клиника в России</p>
-    </header>
-    <div class="links">
-        <a href="index.html">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="symptoms.html">Симптомы</a>
-        <a href="prevention.html">Профилактика</a>
-        <a href="treatment.html">Лечение</a>
+<header>
+    <h1>Добро пожаловать на веб-сайт клиники БиоСпектр</h1>
+    <p>Лучшая частная инфекционная клиника в России</p>
+</header>
+
+<div class="links">
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="services.html">Услуги</a>
+    <a href="prevention.html">Профилактика</a>
+    <a href="treatment.html">Лечение</a>
+</div>
+
+<main>
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider-item">
+                <img src="first-image-1.jpeg" alt="Первое изображение">
+            </div>
+            <div class="slider-item">
+                <img src="second-image-1.jpeg" alt="Второе изображение">
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="backButton">назад</button>
+        <button id="flipButton">вперед</button>
     </div>
 
-    <main>
-        <div class="slider-container">
-            <div class="slider-wrapper">
-                <div class="slider-item">
-                    <img src="first-image.jpg" alt="Первое изображение">
-                </div>
-                <div class="slider-item">
-                    <img src="second-image.jpg" alt="Второе изображение">
-                </div>
-            </div>
+    <div class="info-block">
+        <h2>Информация о нашей клинике — БиоСпектр</h2>
+        <p>Инфекционный Центр БиоСпектр — ведущая частная медицинская клиника, специализирующаяся на диагностике,</p>
+        <p>лечении и профилактике инфекционных заболеваний. Наша клиника предоставляет высококвалифицированную
+            медицинскую помощь в индивидуальном и комфортном окружении, гарантируя безопасность и конфиденциальность
+            каждого пациента.</p>
+    </div>
+</main>
+<footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h3>Свяжитесь с нами</h3>
+            <p>Email: info@infectionproject.com</p>
+            <p>Телефон: +7 (123) 456-7890</p>
         </div>
-        <div class="buttons">
-            <button id="backButton">назад</button>
-            <button id="flipButton">вперед</button>
+        <div>
+            <h3>Подписывайтесь на нас</h3>
+            <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Facebook</a>
+            <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Twitter</a>
+            <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Instagram</a>
         </div>
+    </div>
+    <hr style="margin: 20px 0;">
+    <p style="margin: 0;">&copy; 2024 БиоСпектр. Все права защищены.</p>
+</footer>
 
-        <div class="info-block">
-            <h2>Информация о нашей клинике - БиоСпектр</h2>
-            <p>Инфекционный Центр БиоСпектр — ведущая частная медицинская клиника, специализирующаяся на диагностике,</p>
-            <p>лечении и профилактике инфекционных заболеваний. Наша клиника предоставляет высококвалифицированную медицинскую помощь в индивидуальном и комфортном окружении, гарантируя безопасность и конфиденциальность каждого пациента.</p>
-        </div>
-    </main>
-    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <h3>Свяжитесь с нами</h3>
-                <p>Email: info@infectionproject.com</p>
-                <p>Телефон: +7 (123) 456-7890</p>
-            </div>
-            <div>
-                <h3>Подписывайтесь на нас</h3>
-                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Facebook</a>
-                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Twitter</a>
-                <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;">Instagram</a>
-            </div>
-        </div>
-        <hr style="margin: 20px 0;">
-        <p style="margin: 0;">&copy; 2024 Проект Инфекция. Все права защищены.</p>
-    </footer>
+<script>
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    const flipButton = document.getElementById('flipButton');
+    const backButton = document.getElementById('backButton');
 
-    <script>
-        const sliderWrapper = document.querySelector('.slider-wrapper');
-        const flipButton = document.getElementById('flipButton');
-        const backButton = document.getElementById('backButton');
+    flipButton.addEventListener('click', function() {
+        sliderWrapper.style.transform = 'translateX(-100%)';
+    });
 
-        flipButton.addEventListener('click', function() {
-            sliderWrapper.style.transform = 'translateX(-100%)';
-        });
-
-        backButton.addEventListener('click', function() {
-            sliderWrapper.style.transform = 'translateX(0%)';
-        });
-    </script>
+    backButton.addEventListener('click', function() {
+        sliderWrapper.style.transform = 'translateX(0%)';
+    });
+</script>
 </body>
 </html>

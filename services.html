@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Симптомы - Проект Инфекция</title>
+    <title>Название вашей страницы</title> <!-- Change the text here -->
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -59,6 +59,24 @@
             font-size: 1.2em;
             margin-bottom: 0;
         }
+        .price {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .buy-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
         /* Reversed styling for even-numbered sections */
         .section.even .image-section {
             float: left;
@@ -74,12 +92,14 @@
 </head>
 <body>
     <header>
-        <h1>Симптомы - Проект Инфекция</h1>
+        <h1>Добро пожаловать на веб-сайт клиники БиоСпектр</h1>
+        <p>Лучшая частная инфекционная клиника в России</p>
     </header>
+
     <div class="links">
         <a href="index.html">Главная</a>
         <a href="about.html">О нас</a>
-        <a href="symptoms.html">Симптомы</a>
+        <a href="services.html">Услуги</a>
         <a href="prevention.html">Профилактика</a>
         <a href="treatment.html">Лечение</a>
     </div>
@@ -87,38 +107,35 @@
     <div class="container">
         <div class="section">
             <div class="text-section">
-                <h2>Лихорадка</h2>
-                <p>Высокая температура тела, часто сопровождаемая ознобом или потоотделением, является распространенным симптомом многих инфекционных заболеваний.</p>
+                <h2>Диагностика и лечение</h2>
+                <p>Наши специалисты проводят высокоточную диагностику инфекционных заболеваний с использованием передового оборудования. Мы предлагаем индивидуальный подход к каждому пациенту и эффективные методы лечения, направленные на быстрое восстановление.</p>
+                <div class="price">Цена: 5000 руб.</div>
+                <button class="buy-button" onclick="buyNow()">Купить</button>
             </div>
             <div class="image-section">
-                <img src="fever.jpg" alt="Лихорадка">
+                <img src="diagnosis.jpg" alt="Диагностика и лечение">
             </div>
         </div>
         <div class="section even"> <!-- Even-numbered section -->
             <div class="image-section">
-                <img src="cough.jpg" alt="Кашель">
+                <img src="prevention.jpg" alt="Профилактика">
             </div>
             <div class="text-section">
-                <h2>Кашель</h2>
-                <p>Постоянный кашель, иногда сопровождаемый мокротой или болями в груди, может быть признаком респираторных инфекций, таких как грипп или пневмония.</p>
+                <h2>Профилактика инфекций</h2>
+                <p>Мы предлагаем широкий спектр профилактических мероприятий, направленных на укрепление иммунитета и защиту от инфекций. Это включает в себя консультации по вакцинации, рекомендации по гигиене и здоровому образу жизни.</p>
+                <div class="price">Цена: 3000 руб.</div>
+                <button class="buy-button" onclick="buyNow()">Купить</button>
             </div>
         </div>
         <div class="section">
             <div class="text-section">
-                <h2>Усталость</h2>
-                <p>Крайнее усталость или истощение, которые не улучшаются отдыхом, могут быть признаками различных инфекций, влияющих на уровень энергии организма.</p>
+                <h2>Консультации и рекомендации</h2>
+                <p>Наша команда опытных врачей готова предоставить вам квалифицированные консультации и рекомендации по профилактике и лечению инфекционных заболеваний. Мы всегда готовы помочь вам сохранить здоровье и благополучие.</p>
+                <div class="price">Цена: 2000 руб.</div>
+                <button class="buy-button" onclick="buyNow()">Купить</button>
             </div>
             <div class="image-section">
-                <img src="fatigue.jpg" alt="Усталость">
-            </div>
-        </div>
-        <div class="section even"> <!-- Even-numbered section -->
-            <div class="image-section">
-                <img src="rash.jpeg" alt="Сыпь">
-            </div>
-            <div class="text-section">
-                <h2>Сыпь</h2>
-                <p>Сыпь на коже, характеризующаяся покраснением, зудом или воспалением, может возникать в ответ на определенные вирусные или бактериальные инфекции.</p>
+                <img src="consultation.jpg" alt="Консультации и рекомендации">
             </div>
         </div>
     </div>
@@ -140,5 +157,11 @@
         <hr style="margin: 20px 0;">
         <p style="margin: 0;">&copy; 2024 Проект Инфекция. Все права защищены.</p>
     </footer>
+
+    <script>
+        function buyNow() {
+            alert("Купите по телефону (контакту указанному ниже)");
+        }
+    </script>
 </body>
 </html>
